@@ -1,6 +1,7 @@
 # toc_tutorial_colab
-2024.9.20.
+2024.9.21.
 실습을 위한 자료입니다.
+
 A teaching platform for computer-aided drug design (CADD) using open source packages and data
 Volkamer Lab
 
