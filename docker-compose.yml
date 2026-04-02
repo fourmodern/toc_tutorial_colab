@@ -1,0 +1,8 @@
+services:
+  toc:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./results:/workspace/results
+    container_name: toc-tutorial
