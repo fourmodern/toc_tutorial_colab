@@ -8,7 +8,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
     wget curl git build-essential \
     swig \
-    libopenbabel-dev openbabel \
     libxml2-dev libxslt1-dev \
     && rm -rf /var/lib/apt/lists/*
 
