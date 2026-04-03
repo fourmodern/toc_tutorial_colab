@@ -23,6 +23,7 @@ RUN pip install --no-cache-dir \
     openbabel-wheel
 
 # ---- Tier 2: Structural biology (t008-t010) ----
+# plip excluded (requires openbabel C lib build, problematic on ARM)
 RUN pip install --no-cache-dir \
     biotite \
     MDAnalysis \
@@ -33,7 +34,6 @@ RUN pip install --no-cache-dir \
     nglview==3.0.6 \
     ipywidgets \
     py3Dmol \
-    plip \
     prolif \
     pdbfixer openmm \
     spyrmsd==0.5.2
