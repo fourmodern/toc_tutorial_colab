@@ -9,11 +9,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget curl git build-essential \
     swig \
     libxml2-dev libxslt1-dev \
+    libxrender1 libxext6 libgl1 \
     && rm -rf /var/lib/apt/lists/*
 
 # ---- Tier 1: Core cheminformatics (t000-t010) ----
 RUN pip install --no-cache-dir \
-    rdkit-pypi \
+    rdkit \
     chembl_webresource_client \
     scikit-learn scipy \
     pandas numpy matplotlib seaborn \
